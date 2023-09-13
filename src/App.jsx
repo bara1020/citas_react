@@ -18,8 +18,11 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (pacientes.length > 0) 
-    localStorage.setItem('pacientes', JSON.stringify(pacientes))
+    if (pacientes != null) {
+      if (pacientes.length > 0) 
+      localStorage.setItem('pacientes', JSON.stringify(pacientes))
+    }
+   
   }, [pacientes])
 
   const eliminarPaciente = (id) => {
