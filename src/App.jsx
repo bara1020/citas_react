@@ -1,5 +1,5 @@
 
-import Header from "./components/header"
+import Header from "./components/Header"
 import Form from "./components/Form"
 import ListadoPacientes from "./components/ListadoPacientes"
 import { useEffect, useState } from "react"
