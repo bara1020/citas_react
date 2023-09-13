@@ -19,6 +19,8 @@ function App() {
   }, [])
 
   useEffect(() => {
+    console.log('pacientes', pacientes);
+    if (pacientes.length > 0) 
     localStorage.setItem('pacientes', JSON.stringify(pacientes))
   }, [pacientes])
 
